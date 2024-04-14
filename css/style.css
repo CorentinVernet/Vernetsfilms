@@ -5,14 +5,13 @@ h1
 
 body
 {
-    background-color: rgb(216, 226, 197);
+    background-color: rgb(210, 212, 226);
 }
 
 #background
 {
         width: 800px;
-        margin:0 auto;
-        background-color: rgb(216, 226, 197);
+        margin: 0 auto;
         text-align: center;
         align-content: center;
 }
