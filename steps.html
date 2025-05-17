@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Étapes - Vernetfilms</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/vernetsfilms.png" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Vernetfilms</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="vernetsfilms_steps.html">Étapes</a></li>
+        <li><a href="vernetsfilms_words_of_singer.html">Paroles</a></li>
+        <li><a href="vernetsfilms_apps.html">Logiciels</a></li>
+        <li><a href="vernetsfilms_contact_us.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <h1>Étapes pour réaliser une vidéo</h1>
+      <h2>De la préparation au visionnage</h2>
+
+      <section class="step">
+        <h3>1. Préparation</h3>
+        <img src="assets/préparation.jpg" alt="Préparation" />
+        <p>
+          On commence par trouver et discuter les idées. Ensuite, on écrit tout
+          et on prépare le tournage.
+        </p>
+      </section>
+
+      <section class="step">
+        <h3>2. Tournage</h3>
+        <img src="assets/tournage.jpg" alt="Tournage" />
+        <p>
+          Les scènes sont filmées, parfois sur fond vert pour des effets
+          spéciaux. C'est la partie la plus longue.
+        </p>
+      </section>
+
+      <section class="step">
+        <h3>3. Montage</h3>
+        <img src="assets/montage.jpg" alt="Montage" />
+        <p>
+          Les clips sont assemblés, on ajoute des effets, sons et transitions
+          pour finaliser la vidéo.
+        </p>
+      </section>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>

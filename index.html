@@ -1,63 +1,60 @@
 <!DOCTYPE html>
-
-<html>
+<html lang="fr">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vernetfilms</title>
-    <link rel="icon" type="image/x-icon" href="assets/vernetsfilms.png" />
-    <link rel="stylesheet" href="css\style.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/png" href="assets/vernetsfilms.png" />
   </head>
   <body>
-    <div id="background">
-      <img src="assets\vernetsfilms.png" width="430" height="auto" />
-      <h2>Bienvenue sur le site de Vernetsfilms</h2>
-      <h3>
-        Ici, vous allez pouvoir découvrir <br />la production vernetsfilms.<br /><br />
-      </h3>
-      <ul>
+    <nav class="navbar">
+      <div class="logo">Vernetfilms</div>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="steps.html">Étapes</a></li>
+        <li><a href="words_of_singer.html">Paroles</a></li>
+        <li><a href="apps.html">Logiciels</a></li>
+        <li><a href="contact_us.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <img
+        src="assets/vernetsfilms.png"
+        alt="Logo Vernetfilms"
+        class="hero-logo"
+      />
+      <h2>Bienvenue sur le site de Vernetfilms</h2>
+      <p>Découvrez nos clips, bêtisiers et autres productions !</p>
+
+      <div class="button-group">
         <a
           href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bBHzk8m8uAMxvq7z0NmD34V"
-          ><font face="arial" size="4pt"
-            ><li>
-              <img src="assets\youtube_icon.png" width="25" height="auto" />Voir
-              tous les clips d'Aldebert<br /><br /></li></font
-        ></a>
+          class="btn primary"
+          >Clips d'Aldebert</a
+        >
         <a
           href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bBEUo8pp3z5iY9Xw-B8ZBWC"
-          ><font face="arial" size="4pt"
-            ><li>
-              <img src="assets\youtube_icon.png" width="25" height="auto" />Voir
-              tous les bêtisiers d'Aldebert<br /><br /></li></font
-        ></a>
+          class="btn secondary"
+          >Bêtisiers</a
+        >
         <a
           href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bA4X7E7XIsX5s173knWJh8m"
-          ><font face="arial" size="4pt"
-            ><li>
-              <img src="assets\youtube_icon.png" width="25" height="auto" />Voir
-              les autres productions de Vernetsfilms<br /><br /></li></font
-        ></a>
-        <a href="vernetsfilms_steps.html"
-          ><font face="arial" size="4pt"
-            ><li>
-              Découvrir les étapes pour réaliser une vidéo<br /><br /></li></font
-        ></a>
-        <a href="vernetsfilms_words_of_singer.html"
-          ><font face="arial" size="4pt"
-            ><li>
-              Toutes les paroles des chansons des clips<br /><br /></li></font
-        ></a>
-        <a href="vernetsfilms_apps.html"
-          ><font face="arial" size="4pt"
-            ><li>Nos applications de montages<br /><br /></li></font
-        ></a>
-        <a href="vernetsfilms_contact_us.html"
-          ><font face="arial" size="4pt"
-            ><li>Contactez-nous<br /><br /></li></font
-        ></a>
+          class="btn secondary"
+          >Autres vidéos</a
+        >
         <a href="https://www.youtube.com/@Vernetsfilms">
-          <img src="assets\suscribe.png" width="250" height="auto"
-        /></a>
-      </ul>
-    </div>
+          <img src="assets/suscribe.png" width="250" alt="S'abonner" />
+        </a>
+      </div>
+    </main>
+
+    <script>
+      function toggleMenu() {
+        document.getElementById("navLinks").classList.toggle("active");
+      }
+    </script>
   </body>
 </html>
