@@ -3,58 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vernetfilms</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="assets/vernetsfilms.png" />
+    <title>Accueil - Vernetfilms</title>
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="icon" href="assets/vernetsfilms.png" />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo">Vernetfilms</div>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html">Accueil</a></li>
-        <li><a href="steps.html">Étapes</a></li>
-        <li><a href="words_of_singer.html">Paroles</a></li>
-        <li><a href="apps.html">Logiciels</a></li>
-        <li><a href="contact_us.html">Contact</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Vernetfilms</div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="steps.html">Étapes</a></li>
+          <li><a href="lyrics.html">Paroles</a></li>
+          <li><a href="apps.html">Logiciels</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <main class="main-content">
-      <img
-        src="assets/vernetsfilms.png"
-        alt="Logo Vernetfilms"
-        class="hero-logo"
-      />
-      <h2>Bienvenue sur le site de Vernetfilms</h2>
-      <p>Découvrez nos clips, bêtisiers et autres productions !</p>
-
-      <div class="button-group">
-        <a
-          href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bBHzk8m8uAMxvq7z0NmD34V"
-          class="btn primary"
-          >Clips d'Aldebert</a
-        >
-        <a
-          href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bBEUo8pp3z5iY9Xw-B8ZBWC"
-          class="btn secondary"
-          >Bêtisiers</a
-        >
-        <a
-          href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bA4X7E7XIsX5s173knWJh8m"
-          class="btn secondary"
-          >Autres vidéos</a
-        >
-        <a href="https://www.youtube.com/@Vernetsfilms">
-          <img src="assets/suscribe.png" width="250" alt="S'abonner" />
-        </a>
-      </div>
+    <main>
+      <section class="hero">
+        <img
+          src="assets/vernetsfilms.png"
+          alt="Logo Vernetfilms"
+          class="hero-logo"
+        />
+        <h1>Bienvenue chez Vernetfilms</h1>
+        <p>Clips, bêtisiers et créations vidéo au rendez-vous !</p>
+        <div class="button-group">
+          <a
+            href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bBHzk8m8uAMxvq7z0NmD34V"
+            class="btn primary"
+            >Clips d'Aldebert</a
+          >
+          <a
+            href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bBEUo8pp3z5iY9Xw-B8ZBWC"
+            class="btn primary"
+            >Bêtisiers Aldebert</a
+          >
+          <a
+            href="https://www.youtube.com/playlist?list=PLQIxTRoi5_bA4X7E7XIsX5s173knWJh8m"
+            class="btn primary"
+            >Autres vidéos</a
+          >
+          <a href="https://www.youtube.com/@Vernetsfilms">
+            <img src="assets/suscribe.png" width="250" alt="S'abonner" />
+          </a>
+        </div>
+      </section>
     </main>
 
-    <script>
-      function toggleMenu() {
-        document.getElementById("navLinks").classList.toggle("active");
-      }
-    </script>
+    <footer>
+      <p>© 2025 Vernetfilms - Tous droits réservés</p>
+    </footer>
+
+    <script src="js/main.js"></script>
   </body>
 </html>

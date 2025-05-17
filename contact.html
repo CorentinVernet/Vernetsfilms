@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Vernetsfilms</div>
+      <div class="menu-toggle" id="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html">Accueil</a></li>
+        <li><a href="steps.html">Étapes</a></li>
+        <li><a href="lyrics.html">Paroles</a></li>
+        <li><a href="apps.html">Logiciels</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+
+    <main class="main-content">
+      <h1>Contactez-nous</h1>
+      <p><strong>Téléphone :</strong><br />+33 6 75 28 28 59</p>
+      <p><strong>Email :</strong><br />vernetsfilms@gmail.com</p>
+      <img src="assets/logo_phone.png" width="50" />
+      <img src="assets/logo_mail.png" width="50" />
+    </main>
+    <main>
+      <section class="contact-form fade-in-up">
+        <h2>Contacte-nous</h2>
+        <form
+          action="mailto:contact@vernetfilms.fr"
+          method="post"
+          enctype="text/plain"
+        >
+          <label>Nom</label>
+          <input type="text" name="nom" required />
+
+          <label>Email</label>
+          <input type="email" name="email" required />
+
+          <label>Message</label>
+          <textarea name="message" rows="6" required></textarea>
+
+          <button type="submit" class="send">Envoyer</button>
+        </form>
+      </section>
+    </main>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

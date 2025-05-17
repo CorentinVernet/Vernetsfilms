@@ -1,0 +1,165 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #0e0e0e;
+  color: white;
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.main-content {
+  max-width: 800px;
+  margin: 120px auto 40px auto;
+  padding: 0 1rem;
+  text-align: center;
+}
+
+.main-content img {
+  display: inline-block;
+  margin: 10px;
+  border-radius: 8px;
+}
+
+h1,
+h2,
+p {
+  margin-bottom: 1rem;
+}
+
+.btn_google-play,
+.btn.secondary {
+  display: inline-block;
+  margin: 0 10px;
+  transition: transform 0.3s ease;
+  width: auto;
+  height: auto;
+}
+
+.btn_google-play img,
+.btn.secondary img {
+  width: 160px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.btn_google-play:hover,
+.btn.secondary:hover {
+  transform: scale(1.05);
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.main-content h1,
+.main-content h2,
+.main-content p,
+.main-content img {
+  animation: fadeInUp 0.6s ease both;
+}
+
+.centered {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.navbar {
+  background: #1a1a1a;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav-links li a {
+  color: #fff;
+  font-weight: bold;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #111;
+  padding: 1rem;
+  text-align: center;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: #1a1a1a;
+    width: 100%;
+    position: absolute;
+    top: 60px;
+    right: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+}
+
+/* Animations douces */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1s ease-out;
+}
+
+/* Hover sur les liens */
+.nav-links li a:hover {
+  color: #e50914;
+  transition: 0.3s;
+}
