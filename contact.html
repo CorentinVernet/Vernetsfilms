@@ -9,13 +9,17 @@
   </head>
   <body>
     <nav class="navbar">
-      <div class="logo">Vernetsfilms</div>
-      <div class="menu-toggle" id="menu-toggle">
-        <i class="fas fa-bars"></i>
+      <div class="logo">
+        <img
+          src="assets/vernetsfilms.png"
+          alt="Vernetsfilms"
+          style="height: 40px"
+        />
       </div>
-      <ul class="nav-links" id="nav-links">
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Accueil</a></li>
-        <li><a href="steps.html">Étapes</a></li>
+        <li><a href="steps.html">Étapes pour la création</a></li>
         <li><a href="lyrics.html">Paroles</a></li>
         <li><a href="apps.html">Logiciels</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -33,7 +37,7 @@
       <section class="contact-form fade-in-up">
         <h2>Contacte-nous</h2>
         <form
-          action="mailto:contact@vernetfilms.fr"
+          action="mailto:contact@Vernetsfilms.fr"
           method="post"
           enctype="text/plain"
         >

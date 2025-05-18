@@ -1,7 +1,7 @@
 function toggleMenu() {
-  document.getElementById("navLinks").classList.toggle("active");
+  const navLinks = document.getElementById("navLinks");
+  navLinks.classList.toggle("active");
 }
-
 function toggleTheme() {
   const html = document.documentElement;
   const current = html.getAttribute("data-theme");
