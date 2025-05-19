@@ -72,6 +72,14 @@
   line-height: 1.6;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
+
+.lyrics .download-btn,
+.lyrics-box .download-btn {
+  display: block;
+  margin: 2rem auto 0 auto;
+  text-align: center;
+}
+
 button {
   background-color: #444;
   color: white;
@@ -85,6 +93,31 @@ button {
 button:hover {
   transform: scale(1.05);
   background-color: #e50914;
+}
+
+.custom-audio {
+  width: 100%;
+  margin: 1rem 0;
+  border-radius: 8px;
+  background-color: #222;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.download-btn {
+  display: inline-block;
+  background-color: #e50914;
+  color: white;
+  padding: 0.6rem 1.2rem;
+  margin-top: 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.download-btn:hover {
+  background-color: #c40810;
+  transform: scale(1.05);
 }
 
 /* Animation d'apparition */

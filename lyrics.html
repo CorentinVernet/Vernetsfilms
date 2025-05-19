@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
     <title>Paroles</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/global.css" />
@@ -33,50 +32,50 @@
       <h1>Paroles des chansons</h1>
       <ul>
         <li>
-          <button onclick="loadLyrics('pour_louper_lecole.txt')">
+          <button onclick="displaySong('pour_louper_lecole')">
             Pour louper l'école
           </button>
         </li>
         <li>
-          <button onclick="loadLyrics('du_gros_son.txt')">Du gros son</button>
+          <button onclick="displaySong('du_gros_son')">Du gros son</button>
         </li>
         <li>
           <button
-            onclick="loadLyrics('on_ne_peut_rein_faire_quand_on_est_petit.txt')"
+            onclick="displaySong('on_ne_peut_rein_faire_quand_on_est_petit')"
           >
             On ne peut rien faire quand on est petit
           </button>
         </li>
         <li>
-          <button onclick="loadLyrics('ecrans_rendez-nous_nos_parents.txt')">
+          <button onclick="displaySong('ecrans_rendez-nous_nos_parents')">
             Écrans rendez-nous nos parents
           </button>
         </li>
         <li>
-          <button onclick="loadLyrics('jai_peur_du_noir.txt')">
+          <button onclick="displaySong('jai_peur_du_noir')">
             J'ai peur du noir
           </button>
         </li>
         <li>
-          <button onclick="loadLyrics('super_pouvoir_pourris.txt')">
+          <button onclick="displaySong('super_pouvoir_pourris')">
             Super pouvoir pourris
           </button>
         </li>
         <li>
-          <button onclick="loadLyrics('la_soucoupe_volante.txt')">
+          <button onclick="displaySong('la_soucoupe_volante')">
             La soucoupe volante
           </button>
         </li>
-        <li><button onclick="loadLyrics('larnaque.txt')">L'arnaque</button></li>
-        <li><button onclick="loadLyrics('joli_zoo.txt')">Joli Zoo</button></li>
-        <li>
-          <button onclick="loadLyrics('le_monstre.txt')">Le monstre</button>
-        </li>
+        <li><button onclick="displaySong('larnaque')">L'arnaque</button></li>
+        <li><button onclick="displaySong('joli_zoo')">Joli Zoo</button></li>
+        <li><button onclick="displaySong('le_monstre')">Le monstre</button></li>
       </ul>
 
-      <pre id="lyricsDisplay" class="lyrics-box">
-Clique sur un titre pour afficher les paroles ici.
-      </pre>
+      <div id="songContainer" class="lyrics-box">
+        <p>
+          Clique sur un titre pour afficher les paroles et écouter la musique.
+        </p>
+      </div>
     </main>
   </body>
 </html>
