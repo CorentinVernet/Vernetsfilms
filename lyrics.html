@@ -2,10 +2,13 @@
 <html lang="fr">
   <head>
     <meta charset="UTF-8" />
-    <title>Contact</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Paroles</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/global.css" />
     <link rel="stylesheet" href="css/lyrics.css" />
+    <script src="js/main.js" defer></script>
   </head>
   <body>
     <nav class="navbar">
@@ -16,7 +19,7 @@
           style="height: 40px"
         />
       </div>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+      <div class="menu-toggle">☰</div>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html">Accueil</a></li>
         <li><a href="steps.html">Étapes pour la création</a></li>
@@ -30,39 +33,50 @@
       <h1>Paroles des chansons</h1>
       <ul>
         <li>
-          <a href="assets/lyrics/pour_louper_lecole.txt">Pour louper l'école</a>
+          <button onclick="loadLyrics('pour_louper_lecole.txt')">
+            Pour louper l'école
+          </button>
         </li>
         <li>
-          <a href="assets/lyrics/du_gros_son.txt">Du gros son</a>
+          <button onclick="loadLyrics('du_gros_son.txt')">Du gros son</button>
         </li>
         <li>
-          <a href="assets/lyrics/on_ne_peut_rein_faire_quand_on_est_petit.txt"
-            >On ne peut rien faire quand on est petit</a
+          <button
+            onclick="loadLyrics('on_ne_peut_rein_faire_quand_on_est_petit.txt')"
           >
+            On ne peut rien faire quand on est petit
+          </button>
         </li>
         <li>
-          <a href="assets/lyrics/ecrans_rendez-nous_nos_parents.txt"
-            >Écrans rendez-nous nos parents</a
-          >
+          <button onclick="loadLyrics('ecrans_rendez-nous_nos_parents.txt')">
+            Écrans rendez-nous nos parents
+          </button>
         </li>
         <li>
-          <a href="assets/lyrics/jai_peur_du_noir.txt">J'ai peur du noir</a>
+          <button onclick="loadLyrics('jai_peur_du_noir.txt')">
+            J'ai peur du noir
+          </button>
         </li>
         <li>
-          <a href="assets/lyrics/super_pouvoir_pourris.txt"
-            >Super pouvoir pourris</a
-          >
+          <button onclick="loadLyrics('super_pouvoir_pourris.txt')">
+            Super pouvoir pourris
+          </button>
         </li>
         <li>
-          <a href="assets/lyrics/la_soucoupe_volante.txt"
-            >La soucoupe volante</a
-          >
+          <button onclick="loadLyrics('la_soucoupe_volante.txt')">
+            La soucoupe volante
+          </button>
         </li>
-        <li><a href="assets/lyrics/larnaque.txt">L'arnaque</a></li>
-        <li><a href="assets/lyrics/joli_zoo.txt">Joli Zoo</a></li>
-        <li><a href="assets/lyrics/le_monstre.txt">Le monstre</a></li>
+        <li><button onclick="loadLyrics('larnaque.txt')">L'arnaque</button></li>
+        <li><button onclick="loadLyrics('joli_zoo.txt')">Joli Zoo</button></li>
+        <li>
+          <button onclick="loadLyrics('le_monstre.txt')">Le monstre</button>
+        </li>
       </ul>
+
+      <pre id="lyricsDisplay" class="lyrics-box">
+Clique sur un titre pour afficher les paroles ici.
+      </pre>
     </main>
-    <script src="js/main.js"></script>
   </body>
 </html>
