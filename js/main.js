@@ -1,6 +1,6 @@
 function displaySong(baseName) {
   const lyricsPath = `assets/lyrics/${baseName}.txt`;
-  const audioPath = `assets/audio/${baseName}.mp3`; // dossier audio
+  const audioPath = `assets/audio/${baseName}.mp3`;
   const downloadLink = lyricsPath;
 
   fetch(lyricsPath)
@@ -27,22 +27,18 @@ function displaySong(baseName) {
 }
 
 function displayDownloadButton(url, text = "Télécharger la chanson") {
-  // Vérifie si un ancien bouton existe déjà et le supprime
   const existing = document.querySelector(".download-container");
   if (existing) existing.remove();
 
-  // Crée la div centrée
   const container = document.createElement("div");
   container.className = "download-container";
 
-  // Crée le lien bouton
   const button = document.createElement("a");
   button.className = "download-btn";
   button.href = url;
   button.textContent = text;
   button.download = "";
 
-  // Ajoute le bouton à la div, puis la div au DOM
   container.appendChild(button);
   document.getElementById("songContainer").appendChild(container);
 }
