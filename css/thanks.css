@@ -1,0 +1,75 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #1abc9c, #b1cac5);
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  background: linear-gradient(135deg, #c6d3d0, #1b8fc5);
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  animation: fadeIn 1s ease-in-out;
+}
+
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+a {
+  text-decoration: none;
+  background-color: #ffffff;
+  color: #66d19cd2;
+  padding: 12px 24px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  background-color: #e0e0e0;
+  transform: translateY(-2px);
+}
+
+.checkmark {
+  font-size: 60px;
+  color: #3cb0d3;
+  margin-bottom: 20px;
+  animation: popIn 0.5s ease-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
