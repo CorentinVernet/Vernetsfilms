@@ -35,14 +35,21 @@
       <img src="assets/logo_phone.png" width="50" />
       <img src="assets/logo_mail.png" width="50" />
     </main>
+
     <main>
       <section class="contact-form fade-in-up">
         <h2>Contacte-nous</h2>
         <form
-          action="mailto:contact@Vernetsfilms.fr"
-          method="post"
-          enctype="text/plain"
+          action="https://formsubmit.co/vernetsfilms@gmail.com"
+          method="POST"
         >
+          <input type="hidden" name="_captcha" value="false" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://corentinvernet.github.io/Vernetsfilms/thanks.html"
+          />
+
           <label>Nom</label>
           <input type="text" name="nom" required />
 
